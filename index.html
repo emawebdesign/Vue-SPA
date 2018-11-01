@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SPA</title>
+        <link rel="stylesheet" href="assets/libs/bulma/css/bulma.min.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
+
+    <body>
+
+        <div id="app" class="container">
+
+            <nav class="panel m-20">
+                <p class="panel-tabs has-background-light">
+                    <router-link to="/home">Home</router-link>
+                    <router-link to="/about">About</router-link>
+                </p>
+                <div class="panel-block has-text-centered p-20">
+                    <router-view></router-view>
+                </div>
+            </nav>
+
+        </div>
+
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/vue-router.js"></script>
+    <script src="assets/libs/fontawesome.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/core.js"></script>
+
+    </body>
+
+</html>
+
